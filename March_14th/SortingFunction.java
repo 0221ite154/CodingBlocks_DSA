@@ -1,9 +1,10 @@
-package Feb_27th;
+package March_14th;
 
-public class Question1 {
+public class SortingFunction {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Arrays.sort();
 
 	}
 

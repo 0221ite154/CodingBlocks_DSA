@@ -1,0 +1,22 @@
+package March_11th;
+
+public class FindPivotIndexLeetcode {
+	
+	 public int pivotIndex(int[] nums) {
+	        int rightSum= 0;
+	        for(int i=0;i<nums.length;i++){
+	            rightSum=rightSum+nums[i];
+	        }
+	        int leftSum=0;
+	        for(int i=0;i<nums.length;i++){
+	            rightSum=rightSum-nums[i];
+	            if(rightSum==leftSum){
+	                return i;
+	            }
+	            leftSum=leftSum+nums[i];
+	        }
+	        return -1;
+	    }
+	}
+
+}

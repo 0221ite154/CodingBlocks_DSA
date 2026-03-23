@@ -1,21 +1,24 @@
-package Feb_27th;
+package March_16th;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class sort {
+public class ProductOfArray {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int arr[]=new int[n];
 		for(int i=0;i<n;i++) {
 			arr[i]=sc.nextInt();
 		}
-		Arrays.sort(arr);
+		
+		int product =1;
 		for(int i=0;i<n;i++) {
-		System.out.print(arr[i]+" ");
+			product*=arr[i];
 		}
+		System.out.println(product);
+
 	}
 
 }
